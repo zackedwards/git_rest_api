@@ -4,4 +4,4 @@ python:
 
 # command to run tests
 script:
- - python -m unittest Test_get_info
+ - python -m unittest git_repo_test
