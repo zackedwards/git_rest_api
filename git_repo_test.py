@@ -21,8 +21,11 @@ def get_info(name):
         return False
 class Test_get_info(unittest.TestCase):
 
-    def test_upper(self):
+    def test_my_git(self):
         self.assertTrue(get_info('zackedwards'))
+    
+    def test_not_a_real_git(self):
+        self.assertFalse(get_info('pleasedontexist'))
 
 if __name__ == '__main__':
     unittest.main()
